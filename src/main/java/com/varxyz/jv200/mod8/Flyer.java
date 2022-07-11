@@ -14,4 +14,5 @@ public interface Flyer {
 	void takeOff();
 	void land();
 //	void vehicle();
+	void vehicle();
 }
