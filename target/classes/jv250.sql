@@ -58,7 +58,16 @@ VALUES  ('123-45-6789', 10000.0 , 0.03 , 20000.0 , 'C' , 1001),
 
 DROP TABLE Account;
 
+-- inner join
+SELECT * FROM Account, Customer WHERE Account.customerId = Customer.cid
+AND Customer.ssn = '981212-1111111';
 
+SELECT * FROM Account a INNER JOIN Customer c ON a.customerId = c.cid;
+SELECT * FROM Account a INNER JOIN Customer c ON a.customerId = c.cid WHERE c.ssn = '981212-1111111';
+
+SELECT * FROM CUSTOMER;
+
+DELETE FROM Customer WHERE name = '여포';
 
 
    
